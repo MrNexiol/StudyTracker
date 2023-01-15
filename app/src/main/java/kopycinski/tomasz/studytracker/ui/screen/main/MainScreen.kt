@@ -17,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
 import kopycinski.tomasz.studytracker.R
+import kopycinski.tomasz.studytracker.ui.component.StudySessionHorizontal
 
 @Composable
 fun MainScreen(
@@ -43,7 +44,7 @@ fun MainScreen(
             modifier = Modifier.padding(paddingValues)
         ) {
             items(studySessions) {
-                Text(text = it.timeMillis.toString())
+                StudySessionHorizontal(studySession = it)
             }
         }
     }
