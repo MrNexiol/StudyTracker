@@ -5,6 +5,6 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class StudySession(
-    @PrimaryKey val id: Long,
-    val dateMillis: Long
+    val timeMillis: Long,
+    @PrimaryKey(autoGenerate = true) val id: Long = 0
 )
