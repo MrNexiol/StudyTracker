@@ -1,4 +1,4 @@
-package kopycinski.tomasz.studytracker
+package kopycinski.tomasz.studytracker.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,9 +7,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
+import dagger.hilt.android.AndroidEntryPoint
 import kopycinski.tomasz.studytracker.ui.screen.main.MainScreen
 import kopycinski.tomasz.studytracker.ui.theme.StudyTrackerTheme
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
